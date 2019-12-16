@@ -1,4 +1,4 @@
-const baseUrl = 'resourcelib';
+const baseUrl = '/resourcelib';
 export const resourceApiUrl = {
     queryResourceList: `${baseUrl}/resource/queryResourceList`,
     addResourceInfo: `${baseUrl}/resource/addResourceInfo`,
