@@ -244,8 +244,8 @@ export default class hTable extends Vue {
                 }
             })
         }
-
-        if (this.searchParams.sorter && Object.keys(this.searchParams.sorter).length > 0) {
+        // 处理排序字段
+        if (this.searchParams.sorter && this.searchParams.sorter.field) {
             if (this.searchParams.sorter.order === 'descend') {
                 queryCondition.sortCondition = {
                     sortRule: 'desc',
@@ -257,7 +257,8 @@ export default class hTable extends Vue {
                     sortField: this.searchParams.sorter.field
                 }
             }
-
+        } else {
+            queryCondition.sortCondition = {}
         }
         this.$emit('queryConditionChange', queryCondition)
     }

@@ -16,6 +16,7 @@ import { EXPORTTYPEENUM } from "../../../enum/exportTypeEnum";
     }
 })
 export default class resourceList extends TableBasic {
+
     $refs: {
         table: hTable
     }
@@ -53,6 +54,9 @@ export default class resourceList extends TableBasic {
         exportName: '资源信息',
     }
 
+    mounted() {
+        this.searchList();
+    }
     /**
      * 列表查询
      */

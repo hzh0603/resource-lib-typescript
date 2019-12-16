@@ -1,6 +1,7 @@
 import Vue from 'vue';
 import { QueryCondition, ExportInfo } from '@/model/table';
-
+import Component from 'vue-class-component';
+@Component
 export default class TableBasic extends Vue {
     public pagination = {
         current: 1,
@@ -45,6 +46,11 @@ export default class TableBasic extends Vue {
     public searchList() {
 
     };
+
+    /**
+     * 查询条件变化
+     * @param e 
+     */
     public queryConditionChange(e) {
         if (Object.getOwnPropertyNames(e.bizCondition).length !== 0) {
             const bizCondition = {};
