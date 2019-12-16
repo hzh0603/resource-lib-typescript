@@ -1,0 +1,198 @@
+{
+  "id": "1459816",
+  "name": "资源库",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "978575",
+      "name": "展开",
+      "font_class": "-expand",
+      "unicode": "e6e0",
+      "unicode_decimal": 59104
+    },
+    {
+      "icon_id": "1977330",
+      "name": "查看",
+      "font_class": "-look",
+      "unicode": "e674",
+      "unicode_decimal": 58996
+    },
+    {
+      "icon_id": "2104880",
+      "name": "删除筛选项",
+      "font_class": "-cha",
+      "unicode": "e61a",
+      "unicode_decimal": 58906
+    },
+    {
+      "icon_id": "2885293",
+      "name": "展开",
+      "font_class": "-expanded",
+      "unicode": "e656",
+      "unicode_decimal": 58966
+    },
+    {
+      "icon_id": "3335199",
+      "name": "提交申请",
+      "font_class": "-requisition",
+      "unicode": "e615",
+      "unicode_decimal": 58901
+    },
+    {
+      "icon_id": "8562227",
+      "name": "icon_书架",
+      "font_class": "-library",
+      "unicode": "e61d",
+      "unicode_decimal": 58909
+    },
+    {
+      "icon_id": "10070612",
+      "name": "系统管理",
+      "font_class": "-system",
+      "unicode": "e636",
+      "unicode_decimal": 58934
+    },
+    {
+      "icon_id": "10070646",
+      "name": "新增",
+      "font_class": "-add",
+      "unicode": "e648",
+      "unicode_decimal": 58952
+    },
+    {
+      "icon_id": "10070648",
+      "name": "修改",
+      "font_class": "-edit",
+      "unicode": "e64c",
+      "unicode_decimal": 58956
+    },
+    {
+      "icon_id": "10070650",
+      "name": "用户",
+      "font_class": "-user",
+      "unicode": "e64f",
+      "unicode_decimal": 58959
+    },
+    {
+      "icon_id": "10070655",
+      "name": "重置",
+      "font_class": "-reset",
+      "unicode": "e654",
+      "unicode_decimal": 58964
+    },
+    {
+      "icon_id": "10070656",
+      "name": "配置权限",
+      "font_class": "-privilege",
+      "unicode": "e655",
+      "unicode_decimal": 58965
+    },
+    {
+      "icon_id": "11419396",
+      "name": "导出",
+      "font_class": "-export",
+      "unicode": "e659",
+      "unicode_decimal": 58969
+    },
+    {
+      "icon_id": "11419397",
+      "name": "筛选",
+      "font_class": "-filter",
+      "unicode": "e65a",
+      "unicode_decimal": 58970
+    },
+    {
+      "icon_id": "11419398",
+      "name": "导入模板",
+      "font_class": "-export-template",
+      "unicode": "e65b",
+      "unicode_decimal": 58971
+    },
+    {
+      "icon_id": "11419399",
+      "name": "删除",
+      "font_class": "-delete",
+      "unicode": "e65c",
+      "unicode_decimal": 58972
+    },
+    {
+      "icon_id": "11419400",
+      "name": "设置",
+      "font_class": "-setting",
+      "unicode": "e65d",
+      "unicode_decimal": 58973
+    },
+    {
+      "icon_id": "11419401",
+      "name": "素材管理",
+      "font_class": "-sucaiguanli",
+      "unicode": "e65e",
+      "unicode_decimal": 58974
+    },
+    {
+      "icon_id": "11419402",
+      "name": "运营管理",
+      "font_class": "-yunyingguanli",
+      "unicode": "e65f",
+      "unicode_decimal": 58975
+    },
+    {
+      "icon_id": "11419404",
+      "name": "下载",
+      "font_class": "-download",
+      "unicode": "e661",
+      "unicode_decimal": 58977
+    },
+    {
+      "icon_id": "11419405",
+      "name": "暂存架",
+      "font_class": "-sheft",
+      "unicode": "e662",
+      "unicode_decimal": 58978
+    },
+    {
+      "icon_id": "11419406",
+      "name": "资源管理",
+      "font_class": "-ziyuanguanli",
+      "unicode": "e663",
+      "unicode_decimal": 58979
+    },
+    {
+      "icon_id": "11419407",
+      "name": "暂存架导航条",
+      "font_class": "-zancunjia",
+      "unicode": "e664",
+      "unicode_decimal": 58980
+    },
+    {
+      "icon_id": "11419408",
+      "name": "作家管理",
+      "font_class": "-writer",
+      "unicode": "e665",
+      "unicode_decimal": 58981
+    },
+    {
+      "icon_id": "11482374",
+      "name": "审批-03",
+      "font_class": "-approval",
+      "unicode": "e603",
+      "unicode_decimal": 58883
+    },
+    {
+      "icon_id": "11560453",
+      "name": "查找",
+      "font_class": "-search",
+      "unicode": "e604",
+      "unicode_decimal": 58884
+    },
+    {
+      "icon_id": "11759820",
+      "name": "到期提醒-01",
+      "font_class": "-expire",
+      "unicode": "e660",
+      "unicode_decimal": 58976
+    }
+  ]
+}

@@ -1,0 +1,126 @@
+  .h-table {
+    .no-row-render {
+      .ant-table-expand-icon-th {
+        display: none;
+      }
+
+      .ant-table-row-expand-icon-cell {
+        display: none;
+      }
+    }
+
+    .ant-table td {
+      white-space: nowrap;
+    }
+
+    .ant-table-header {
+      background: none;
+    }
+
+    .ant-table-wrapper {
+      .ant-table-expanded-row {
+        min-height: 180px;
+      }
+
+      .ant-table-wrapper {
+        width: 37%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+
+        .ant-spin-container {
+          max-height: 200px;
+          overflow: auto;
+        }
+      }
+    }
+
+    .ant-table-fixed-right table, .ant-table-scroll table, .ant-table-body table {
+      font-size: 12px;
+      height: 36px;
+      line-height: 36px;
+      border: 1px solid #e5e5e5;
+
+      .ant-table-thead > tr > th, .ant-table-tbody > tr > td {
+        padding: 0;
+        text-indent: 10px;
+        white-space: nowrap;
+        //width:100%;
+        text-overflow: ellipsis;
+        overflow: hidden;
+      }
+
+      .ant-table-tbody > tr > td {
+        height: 32px;
+        line-height: 32px;
+        //overflow: hidden !important;
+        //white-space: nowrap;
+        //text-overflow: ellipsis;
+      }
+    }
+
+    .filter-date {
+      width: 200px;
+    }
+
+    .ant-table-wrapper .ant-spin-nested-loading .ant-spin-container .ant-table-pagination {
+      display: flex;
+      align-items: center;
+
+      .ant-pagination-total-text {
+        display: flex;
+        align-items: center;
+      }
+
+      .ant-pagination-item, .ant-pagination-prev, .ant-pagination-next {
+        height: 24px;
+        line-height: 24px;
+      }
+
+      .ant-pagination-options .ant-select .ant-select-selection {
+        height: 24px;
+        line-height: 24px;
+
+        .ant-select-selection__rendered {
+          line-height: 24px;
+        }
+      }
+
+
+    }
+
+    .ant-table-selection {
+      .ant-checkbox-wrapper {
+        margin-right: -10px !important;
+      }
+    }
+
+    // 表格展开图标
+    .ant-table-row-expand-icon {
+      border: 0;
+      background: none;
+    }
+
+    .ant-table-row-expand-icon::after {
+      position: relative;
+      left: -5px;
+      top: 1px;
+    }
+
+    .ant-table-row-expanded::after {
+      content: "\e656" !important;
+      font-family: "iconfont" !important;
+      font-size: 16px;
+      font-style: normal;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    .ant-table-row-expand-icon::after {
+      content: "\e6e0";
+      font-family: "iconfont" !important;
+      font-size: 16px;
+      font-style: normal;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+  }

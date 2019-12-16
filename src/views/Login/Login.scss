@@ -1,0 +1,35 @@
+.user-login {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url('../../assets/img/login/u0.png');
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+    overflow-y: hidden;
+    .login-center{
+        width: 502px;
+        height: 500px;
+        align-self: flex-end;
+        padding: 20px;
+        margin-right: 76px;
+        box-shadow: 0 0 10px #cac6c6;
+        border-radius: 20px;
+        background-color: #fff;
+        h2{
+            margin-bottom: 50px;
+            text-align: center;
+            letter-spacing: 5px;
+            color: #5560ff;
+            font-size: 22px;
+            margin-top: 56px;
+        }
+    }
+}
+.components-form-login .login-form-forgot {
+    float: right;
+}
+.components-form-login .slot-class {
+    width: 74%;
+    margin: 0 auto;
+}

@@ -1,4 +1,4 @@
-# vue-cli3-tpl
+# resource-lib-typescript
 
 ## Project setup
 ```

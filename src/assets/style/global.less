@@ -1,0 +1,147 @@
+@import "./table";
+@import "./login";
+@import "./button";
+@import "./collapse";
+@import "./form";
+@import "./modal";
+@import "./icon";
+// 左侧菜单
+.ant-menu-item {
+  margin-top: 0!important;
+}
+.ant-menu-inline-collapsed {
+  width: 50px;
+}
+.ant-menu-inline-collapsed > .ant-menu-item, .ant-menu-inline-collapsed > .ant-menu-item-group > .ant-menu-item-group-list > .ant-menu-item, .ant-menu-inline-collapsed > .ant-menu-item-group > .ant-menu-item-group-list > .ant-menu-submenu > .ant-menu-submenu-title, .ant-menu-inline-collapsed > .ant-menu-submenu > .ant-menu-submenu-title {
+  left: 0;
+  padding: 0 15px !important;
+  text-overflow: clip;
+}
+// 表格头部搜索
+.header-search {
+  display: flex;
+  flex-flow:row wrap;
+  align-content: flex-start;
+  padding-bottom: 20px;
+  .ant-input {
+    width: 200px;
+    display: inline;
+  }
+  .ant-input-affix-wrapper {
+    display: inline;
+  }
+  .search-item {
+    padding: 10px 60px 10px 0;
+    //flex: 0 0 33%;
+  }
+  .search-button {
+    display: flex;
+    //flex: 0 0 40%;
+    //justify-content: center;
+    //margin-left: auto;
+    align-items: center;
+
+    button {
+      margin: 0 10px;
+    }
+  }
+}
+// 日期选择框和时间选择框
+.ant-calendar-picker{
+  width: 100%;
+}
+.ant-calendar-picker{
+  width: 100%;
+}
+.ant-time-picker{
+  width: 100%;
+}
+//全局label 相关
+//body{
+//  font-size: 12px;
+//}
+label{
+  font-size: 12px;
+}
+p{
+  font-size: 12px;
+}
+span{
+  font-size: 12px;
+}
+// checkbox后的label
+.ant-checkbox-wrapper{
+  font-size: 12px;
+}
+.required::before {
+  display: inline-block;
+  margin-right: 4px;
+  color: #f5222d;
+  font-size: 14px;
+  font-family: SimSun, sans-serif;
+  line-height: 1;
+  content: '*';
+}
+
+::-webkit-resizer {
+  border-radius: .3125rem;
+  background-color: #2f4056
+}
+
+::-webkit-scrollbar {
+  width: .5rem;
+  height: 0.5rem
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: .5rem;
+  background-color: #e5e5e5;
+}
+// 表格蓝色字体
+.table-text-td {
+  width: 100%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  word-break: keep-all;
+  white-space: nowrap;
+}
+.navigate {
+  cursor: pointer;
+  color: #50b0e2;
+}
+.navigate:hover{
+  //text-decoration: underline;
+}
+.header-iconfont{
+  background-color: #e7e8ed;
+  border-radius: 2px;
+  cursor: pointer;
+  i{
+    margin-left: 5px;
+    color:  #323954;
+  }
+}
+.border-red{
+  border-color: #f5222d;
+  //box-shadow: none;
+}
+.permission-disabled{
+  color: rgba(0, 0, 0, 0.25) !important;
+  background-color: #f5f5f5;
+  border-color: #d9d9d9;
+  pointer-events: none;
+  cursor: not-allowed !important;
+  text-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.icon-disabled{
+  color: #a8a9a8 !important;
+  pointer-events: none;
+  cursor: default;
+}
+.div-disabled{
+  color: #a8a9a8 !important;
+  pointer-events: none;
+  cursor: default;
+}

@@ -1,0 +1,83 @@
+  // 表单相关
+  .form-unit{
+    position: relative;
+    padding: 10px;
+  }
+  .form-box-header{
+    color: #333;
+    font-size: 16px;
+    font-weight: 900;
+    padding: 15px;
+  }
+  .form-box-footer{
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-bottom: 27px;
+  }
+  .ant-form{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .ant-form-item{
+    /*display: flex;*/
+    width: 50%;
+  }
+  .ant-input-number{
+    width: 100%;
+  }
+  .ant-form-item-control-wrapper{
+    min-width: 200px;
+  }
+  .ant-form-item-control{
+    line-height: 30px;
+    padding: 5px;
+  }
+  .ant-form-item-label {
+    min-width: 120px;
+    text-align: left !important;
+    label{
+      padding: 16px;
+      &:before{
+        position: absolute;
+        top:50%;
+        left: 0;
+        transform: translate(0,-50%);
+      }
+    }
+  }
+  .ant-form-item-label label::after{
+    content: '';
+  }
+  .ant-form label {
+    font-size: 12px;
+  }
+  .form-drawer{
+    .ant-form-item{
+      margin-bottom: 6px;
+    }
+  }
+   //角色表单特殊处理
+  .role-form{
+    .form-box-footer{
+      text-align: center;
+      position: inherit;
+      margin: 0;
+    }
+    .submit-class{
+      text-align: center;
+      position: inherit;
+      margin-left: 70px;
+      .ant-form-item{
+        margin-bottom: 0;
+      }
+    }
+    .ant-form{
+      .ant-form-item{
+        width: 100%;
+      }
+      .ant-form-item-control{
+        width: 300px;
+      }
+    }
+  }
