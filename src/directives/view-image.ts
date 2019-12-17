@@ -1,5 +1,5 @@
 import { DirectiveOptions } from 'vue'
-import ViewImageService from '@/components/view-image/view-image-service'
+import ViewImageService from '@/components/viewImage/view-image-service'
 
 export default class ViewImage implements DirectiveOptions {
     bind(el: HTMLElement, binding, vnode) {
