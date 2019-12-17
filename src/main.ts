@@ -10,7 +10,7 @@ import './assets/style/global.less'
 import './assets/style/iconfont/iconfont.css'
 import './assets/style/iconfont/iconfont.js'
 import './assets/style/icon.less'
-
+import 'viewerjs/src/css/viewer.scss'
 
 
 Vue.config.productionTip = false;

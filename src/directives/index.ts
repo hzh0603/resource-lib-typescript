@@ -4,6 +4,6 @@ directives.keys().map(item => {
     // 过滤 index.ts
     if (item !== './index.ts') {
         const component = directives(item);
-        Vue.directive(component.default.name, component.default);
+        Vue.directive(component.default.name, new component.default());
     }
 });
