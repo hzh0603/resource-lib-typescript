@@ -114,7 +114,7 @@ export default class Login extends Vue {
             password: crypto.encrypt(e.password)
         };
         this.loading = true;
-        httpClient.post('resourcelib/sso/login', loginData).then((result: Result) => {
+        httpClient.post('resourcelib/sso/login', loginData).then((result: Result<any>) => {
             if (result.code === '0') {
                 this.loading = false;
                 // 记住密码
@@ -124,7 +124,6 @@ export default class Login extends Vue {
                     commonUtil.setCookie('rememberInfo', '', -1)
                 }
                 this.changeLogin(result.data)
-                // this.$store.commit('changeLogin', result.data);
                 this.dataSet(result.data);
                 // 有菜单时选择跳转到第一个URL
                 if (result.data.menus) {

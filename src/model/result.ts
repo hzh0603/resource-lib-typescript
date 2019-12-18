@@ -1,7 +1,7 @@
-export interface Result {
+export interface Result<T> {
      code?: string;
      msg?: string;
-     data?: any;
+     data?: T;
      pageNum?: number;
      size?: number;
      totalCount?: number;

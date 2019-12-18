@@ -62,7 +62,7 @@ export default class resourceList extends TableBasic {
      */
     public searchList() {
         this.loading = true;
-        httpClient.post(resourceApiUrl.queryResourceList, this.queryCondition).then((result: Result) => {
+        httpClient.post(resourceApiUrl.queryResourceList, this.queryCondition).then((result: Result<any>) => {
             if (result.code === '0') {
                 this.data = result.data.data;
                 this.pagination.total = result.data.totalCount;
@@ -107,7 +107,7 @@ export default class resourceList extends TableBasic {
     }
 
     deleteResourceList(ResourceList) {
-        httpClient.post(resourceApiUrl.deleteResource, ResourceList).then((result: Result) => {
+        httpClient.post(resourceApiUrl.deleteResource, ResourceList).then((result: Result<any>) => {
             if (result.code === '0') {
                 this.$refs.table.selectedRows = [];
                 this.$refs.table.selectedRowKeys = [];

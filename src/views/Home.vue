@@ -194,7 +194,7 @@
         if (roleList.includes(120000)) {
         httpClient
             .get(`/resourcelib/reminder/reminderAfterLogin/${new Date().getTime()}`)
-            .then((result: Result) => {
+            .then((result: Result<any>) => {
             if (result.code === "0") {
                 this.showModal = true;
                 // 传入到期提醒框的总数据
@@ -255,7 +255,7 @@
     changePsw(e) {
         const param = e;
         param.account = localUtil.getUserConfig().account;
-        httpClient.post('/resourcelib/userManage/modifyUserPsw', param).then((result: Result) => {
+        httpClient.post('/resourcelib/userManage/modifyUserPsw', param).then((result: Result<any>) => {
         if (result.code === "0") {
             modalService.success({
             content: "修改成功，请注销登录!",
@@ -290,7 +290,7 @@
         modalService.confirm({
         content: "是否注销?",
         onOk: () => {
-            httpClient.get("/resourcelib/sso/logOut").then((result: Result) => {
+            httpClient.get("/resourcelib/sso/logOut").then((result: Result<any>) => {
             if (result.code === "0") {
                 localStorage.clear();
                 window.name = "";
