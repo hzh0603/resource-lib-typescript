@@ -10,6 +10,8 @@ import httpClient from "../../../http";
 import modalService from "../../../components/hModal/modal-service";
 import hTable from '@/components/hTable/hTable';
 import { EXPORTTYPEENUM } from "../../../enum/exportTypeEnum";
+import downloadService from "@/util/download"
+import Download from '../../../util/download';
 @Component({
     components: {
         resourceDrawer
@@ -117,5 +119,19 @@ export default class resourceList extends TableBasic {
                 modalService.error({ content: result.msg });
             }
         })
+    }
+
+    /**
+     * 下载导入模板
+     * @param type 下载文件类型
+     */
+    downLoadTemp(type: number) {
+        let downloadUrl = '';
+        if(type === 0) {
+            downloadUrl = 'templates/OriginalResourceImportTemplate.xlsx'
+        } else {
+            downloadUrl = 'templates/PublishingResourceImportTemplate.xlsx'
+        }
+        downloadService.downloadFile(downloadUrl, `${new Date().getTime()}.xlsx`)
     }
 }
