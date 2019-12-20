@@ -7,11 +7,11 @@ import { ExportInfo } from '../../../model/table';
 import { resourceApiUrl } from '../api-config';
 import { Result } from '../../../model/result';
 import httpClient from "../../../http";
-import modalService from "../../../components/hModal/modal-service";
+import modalService from '../../../components/hModal/modal-service';
 import hTable from '@/components/hTable/hTable';
 import { EXPORTTYPEENUM } from "../../../enum/exportTypeEnum";
 import downloadService from "@/util/download"
-import Download from '../../../util/download';
+import uploadService from '@/util/upload';
 @Component({
     components: {
         resourceDrawer
@@ -125,7 +125,7 @@ export default class resourceList extends TableBasic {
      * 下载导入模板
      * @param type 下载文件类型
      */
-    downLoadTemp(type: number) {
+    public downLoadTemp(type: number) {
         let downloadUrl = '';
         if(type === 0) {
             downloadUrl = 'templates/OriginalResourceImportTemplate.xlsx'
@@ -133,5 +133,21 @@ export default class resourceList extends TableBasic {
             downloadUrl = 'templates/PublishingResourceImportTemplate.xlsx'
         }
         downloadService.downloadFile(downloadUrl, `${new Date().getTime()}.xlsx`)
+    }
+
+    /**
+     * 导入数据
+     * @param type 导入模板类型
+     */
+    public importResource(type: number) {
+        if(type === 0) {
+            uploadService.selectFile({
+                type: ['.jpg', '.png']
+            }).then(console.log)
+        } else {
+            uploadService.selectFile({
+                mode: 'multiple'
+            }).then(console.log)
+        }
     }
 }

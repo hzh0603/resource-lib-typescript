@@ -51,10 +51,10 @@
                         导入资源信息
                     </a-button>
                     <a-menu slot="overlay">
-                        <a-menu-item @click="importResource('0')" v-permission="100006">
+                        <a-menu-item @click="importResource(0)" v-permission="100006">
                             <span>导入原创资源</span>
                         </a-menu-item>
-                        <a-menu-item @click="importResource('1')" v-permission="100007">
+                        <a-menu-item @click="importResource(1)" v-permission="100007">
                             <span>导入出版资源</span>
                         </a-menu-item>
                     </a-menu>
