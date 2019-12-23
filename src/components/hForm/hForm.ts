@@ -66,7 +66,9 @@ export default class hForm extends Vue {
     }
 
     public handleSubmit(e) {
-        e ? e.preventDefault() : '';
+        if(e) {
+            e.preventDefault()
+        }
         this.form.validateFields((err, values) => {
             if (!err) {
                 for (const i in values) {

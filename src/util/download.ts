@@ -18,7 +18,7 @@ export default class Download {
                 window.navigator.msSaveOrOpenBlob(blob, fileName);
             } else {
                 const a = document.createElement('a');
-                a.setAttribute('download', <string>fileName);
+                a.setAttribute('download', fileName as string);
                 a.href = URL.createObjectURL(blob);
                 document.body.appendChild(a);
                 a.click();

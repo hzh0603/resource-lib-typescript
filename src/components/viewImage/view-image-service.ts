@@ -5,7 +5,7 @@ export default class ViewImageService {
     static viewImage(imageList) {
         const instance: any = new viewImageConstructor({
             data: {
-                imageList: imageList
+                imageList
             },
         });
         instance.vm = instance.$mount();
