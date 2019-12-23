@@ -12,6 +12,7 @@ import hTable from '@/components/hTable/hTable';
 import { EXPORTTYPEENUM } from "../../../enum/exportTypeEnum";
 import downloadService from "@/util/download"
 import uploadService from '@/util/upload';
+import {eventBusService, EventBus} from '@/util/event-bus'
 @Component({
     components: {
         resourceDrawer
@@ -58,6 +59,7 @@ export default class resourceList extends TableBasic {
 
     mounted() {
         this.searchList();
+        eventBusService.$emit(EventBus.TEST, '你好呀！！！')
     }
     /**
      * 列表查询
