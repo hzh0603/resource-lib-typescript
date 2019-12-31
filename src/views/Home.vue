@@ -111,11 +111,11 @@
       </a-layout>
     </a-layout>
     <!--到期提醒-->
-    <!-- <expire-remind-modal
+    <expire-remind-modal
       :show-modal="showModal"
       :expireData="expireData"
       @close="closeRemind"
-    ></expire-remind-modal> -->
+    ></expire-remind-modal>
     <!--修改密码-->
     <!-- <modify-password-modal
       :show-modal="showPswModal"
