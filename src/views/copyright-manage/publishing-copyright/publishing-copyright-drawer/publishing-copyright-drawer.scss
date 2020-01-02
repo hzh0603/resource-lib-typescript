@@ -1,0 +1,12 @@
+.active {
+    display: none;
+}
+.approval-div{
+    display: flex;
+    margin-bottom: 12px;
+    .approval-content{
+        width: 15%;
+        margin-right: 20px;
+        margin-left: 17px;
+    }
+}

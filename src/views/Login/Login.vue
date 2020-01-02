@@ -1,7 +1,7 @@
 <template>
 	  <div class="user-login">
         <div class="login-center">
-            <h2  v-viewImage="['https://kidsreading-test.oss-cn-hangzhou.aliyuncs.com/upload/resource/img/9fec6f021a7140e58e49bddaa4d7980f.jpg', 'https://kidsreading-test.oss-cn-hangzhou.aliyuncs.com/upload/resource/img/21129f2312e64fd1ad18ff7fac5bb56f.jpg']">欢迎登陆内容资源库后台管理系统</h2>
+            <h2  v-viewImage="['https://kidsreading-test.oss-cn-hangzhou.aliyuncs.com/upload/resource/img/21129f2312e64fd1ad18ff7fac5bb56f.jpg']">欢迎登陆内容资源库后台管理系统</h2>
             <h-form :form-config="formConfig"
                     class="components-form-login"
                     :submit-name="'登录'"

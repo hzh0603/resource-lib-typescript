@@ -2,7 +2,7 @@ import { Component } from "vue-property-decorator";
 import TableBasic from '@/components/hTable/tableBasic';
 import resourceDrawer from './resource-drawer/resource-drawer.vue';
 import { ColumnConfig } from '@/model/table';
-import ResoureListTableConfig from '../resourceListTableConfig';
+import ResoureListTableConfig from '../resource-manage-table-config';
 import { ExportInfo } from '../../../model/table';
 import { resourceApiUrl } from '../api-config';
 import { Result } from '../../../model/result';

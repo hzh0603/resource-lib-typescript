@@ -75,4 +75,30 @@ export default class CommonUtil {
         }
         return objClone;
     }
+
+    static findLabelByKey(type, key, num) {
+        let originalClassList;
+        if (type === 0) {
+            originalClassList = JSON.parse(localStorage.getItem('originalClassList') as string);
+        } else {
+            originalClassList = JSON.parse(localStorage.getItem('publishingClassList') as string);
+        }
+        let className = '';
+        if (num === 1) {
+            originalClassList.map((item) => {
+                if (item.value === key) {
+                    className = item.label
+                }
+            })
+        } else {
+            originalClassList.map((item) => {
+                item.children.map((_item) => {
+                    if (_item.value === key) {
+                        className = _item.label
+                    }
+                })
+            })
+        }
+        return className
+    }
 }

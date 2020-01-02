@@ -1,15 +1,15 @@
 import Vue from 'vue';
-import VueRouter from 'vue-router';
-import Home from '../views/Home.vue';
+import VueRouter, { RouteConfig } from 'vue-router';
 import Example from '../views/example.vue';
 import resourceRouter from "../views/resource-manage/resource-route";
+import copyrightRouter from '../views/copyright-manage/copyright-manage-router';
 Vue.use(VueRouter);
 
-const routes = [
+const routes: Array<RouteConfig> = [
   {
     path: '/',
     name: 'home',
-    component: Example,
+    redirect: '/login'
   },
   {
     path: '/login',
@@ -20,7 +20,7 @@ const routes = [
     path: '/home',
     name: 'home',
     component: () => import(/* webpackChunkName: "about" */ '../views/Home.vue'),
-    children: [resourceRouter]
+    children: [resourceRouter, copyrightRouter]
   },
   {
     path: '/about',
