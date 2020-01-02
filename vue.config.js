@@ -19,8 +19,7 @@ module.exports = {
             '/resourcelib': {
                 // target: 'http://192.168.11.115:80/resourcelib', // 这里后台的地址模拟的;应该填写你们真实的后台接口
                 // target: 'http://192.168.11.50:8082/resourcelib', // 这里后台的地址模拟的;应该填写你们真实的后台接口
-                // target: 'http://192.168.11.40:8082/resourcelib', // 这里后台的地址模拟的;应该填写你们真实的后台接口
-                target: 'http://47.111.118.36:88/resourcelib', // 这里后台的地址模拟的;应该填写你们真实的后台接口
+                target: 'http://192.168.11.40:8082/resourcelib', // 这里后台的地址模拟的;应该填写你们真实的后台接口
                 ws: true,
                 changOrigin: true, // 允许跨域
                 pathRewrite: {
@@ -28,7 +27,7 @@ module.exports = {
                 }
             },
             '/rslstatic': {
-                target: 'http://47.111.118.36:88/rslstatic', // 这里后台的地址模拟的;应该填写你们真实的后台接口
+                target: 'http://192.168.11.40:8082/rslstatic', // 这里后台的地址模拟的;应该填写你们真实的后台接口
                 ws: true,
                 changOrigin: true, // 允许跨域
                 pathRewrite: {
