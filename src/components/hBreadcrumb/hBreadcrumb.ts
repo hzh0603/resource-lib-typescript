@@ -10,7 +10,6 @@ export default class hBreadcrumb extends Vue {
                 breadcrumbList.push(item.meta.breadcrumb);
             }
         });
-        console.log(breadcrumbList);
         return breadcrumbList;
     }
 }
